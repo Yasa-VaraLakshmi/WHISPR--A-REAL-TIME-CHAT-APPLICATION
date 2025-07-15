@@ -30,7 +30,7 @@ ChartJS.register(
   Filler
 );
 
-const API_KEY = 'd2b13226ffac39da3e6da68722f5ee91';
+const API_KEY = '';
 
 const WeatherDashboard = () => {
   const [city, setCity] = useState('London');
@@ -59,20 +59,20 @@ const WeatherDashboard = () => {
     try {
       setLoading(true);
       const geoRes = await fetch(
-        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`
+        `=${API_KEY}`
       );
       const geoData = await geoRes.json();
       if (!geoData.length) throw new Error('City not found');
       const { lat, lon } = geoData[0];
 
       const currentRes = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`
+        `${API_KEY}`
       );
       const currentData = await currentRes.json();
       setCurrentWeather(currentData);
 
       const forecastRes = await fetch(
-        `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`
+        `{API_KEY}`
       );
       const forecastJson = await forecastRes.json();
       const filteredForecast = forecastJson.list.filter((_, i) => i % 8 === 0);
