@@ -1,0 +1,6 @@
+WHISPR is an intelligent and dynamic real-time chat program with a wealth of features that was created as a unique project to improve user communication. It was created with Socket.io and the MERN stack, and it provides a responsive and seamless
+chat experience in addition to a number of built-in features that go beyond simple messaging. Emoji selection, live location sharing, image uploading, and AI chatbot (Gemini API) compatibility are some of the main features. A weather module with historical and forecast graphs, 
+a language translator that supports over 98 languages, a currency converter for 41 currencies, and a collaborative drawing and sketching canvas are just
+a few of its clever features. Users can right-click or double-click words to retrieve information straight from Google or Wikipedia thanks to the exclusive NOBOT feature. Cloudinary handles image storage, while MongoDB clusters securely manage user
+data and messages. JWT tokens are used to implement authorisation and authentication, guaranteeing security and privacy. The application interface offers a clear, responsive, and adaptable user experience because it is constructed with React.js
+and styled with Tailwind CSS, PostCSS, and DaisyUI. WHISPR is a comprehensive smart communication platform designed to educate,
